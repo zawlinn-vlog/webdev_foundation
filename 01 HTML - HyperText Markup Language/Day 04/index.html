@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body
+    style="
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+        sans-serif;
+    "
+  >
+    <div style="width: 50%; margin-left: auto">
+      <form action="database.php" method="post" enctype="multipart/form-data">
+        <fieldset>
+          <legend>LOGIN FORM</legend>
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" name="" id="username" />
+          </div>
+          <br />
+          <div class="form-group">
+            <label for="pass">Password</label>
+            <input type="password" name="" id="pass" />
+          </div>
+          <br />
+          <div class="form-group">
+            <label for="">Gender</label>
+            <span>
+              <input type="radio" name="Gender" id="male" />
+              <label for="male">Male</label>
+            </span>
+            <span>
+              <input type="radio" name="Gender" id="female" />
+              <label for="female">Female</label>
+            </span>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
