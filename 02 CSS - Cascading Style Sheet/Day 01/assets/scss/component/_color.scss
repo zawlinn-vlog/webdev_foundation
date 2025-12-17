@@ -1,0 +1,69 @@
+// Single Selector
+// Element Selector
+
+h1 {
+  color: tomato;
+  font-size: 5rem;
+  font-family: sans-serif;
+}
+
+h2 {
+  color: crimson;
+}
+
+h3 {
+  color: darkblue;
+}
+
+h4 {
+  color: aqua;
+}
+
+h5 {
+  color: brown;
+}
+
+h6 {
+  color: blueviolet;
+}
+
+// Group Selectors (,)
+
+h5,
+h3 {
+  color: blue;
+  background-color: yellow;
+}
+
+// span {
+//   color: violet;
+// }
+
+#thai {
+  color: blue;
+}
+
+#mm {
+  color: gold;
+  font-size: 4rem;
+}
+
+#bn {
+  font-size: 3rem;
+  color: tomato;
+}
+
+#ml {
+  color: crimson;
+}
+
+#usa,
+#ml,
+#bn,
+#thai {
+  font-size: 3.5rem;
+}
+
+.phone {
+  font-size: 2.8rem;
+}
