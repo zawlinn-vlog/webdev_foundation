@@ -58,3 +58,15 @@ h3 {
 .phone {
   font-size: 2.8rem;
 }
+
+.para {
+  text-align: justify;
+}
+
+.para {
+  text-decoration: underline;
+  text-decoration: line-through;
+  text-decoration: overline;
+  text-decoration-color: red;
+  text-decoration-style: double;
+}

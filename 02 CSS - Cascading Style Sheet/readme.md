@@ -142,6 +142,19 @@ h3 {
 }
 ```
 
+## Text Format &mdash;
+
+text-align: property ဟာ စာပိုဒ်ကို left, right, center and justify အဖြစ်ပြောင်းလဲပေးပါတယ်။
+
+```scss
+.para {
+  // text-align: left; // Default
+  //   text-align: right;
+  //   text-align: center;
+  text-align: justify;
+}
+```
+
 <br/>
 
 [![Webdev Foundation](https://img.shields.io/badge/webdev_foundation-000?style=for-the-badge&logo=ko-fi&logoColor=white)](#)
