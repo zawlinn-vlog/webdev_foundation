@@ -155,6 +155,26 @@ text-align: property ဟာ စာပိုဒ်ကို left, right, center a
 }
 ```
 
+## Letter spacing and Line-height
+
+letter sapcing က alphabet တစ်ခုစီရဲ့ကြား အကွာအဝေးကို adjust လုပ်ပေးတာဖြစ်ပြီး word spacing ကတော့ စာလုံးတစ်လုံးစီရဲ့ အကွာအဝေးကို adjust လုပ်ပေးတာ ဖြစ်ပါတယ်
+line-height ကတော့ စာကြောင်းတစ်ကြောင်းစီရဲ့ အကွာအဝေးကို adjust လုပ်ပေးတာဖြစ်ပါတယ်
+
+```scss
+.para {
+  text-decoration: underline;
+  text-decoration: line-through;
+  text-decoration: overline;
+  text-decoration-color: red;
+  text-decoration-style: double;
+}
+
+.para {
+  //   letter-spacing: 10px;
+  //   line-height: 100px;
+}
+```
+
 <br/>
 
 [![Webdev Foundation](https://img.shields.io/badge/webdev_foundation-000?style=for-the-badge&logo=ko-fi&logoColor=white)](#)
