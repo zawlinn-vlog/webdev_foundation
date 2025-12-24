@@ -4,3 +4,27 @@
   color: #333;
   text-shadow: 0.3rem 0.2rem 0.1rem rgba(0, 0, 0, 0.5);
 }
+
+.bdstyle1 {
+  border-style: solid;
+}
+
+.bdstyle2 {
+  border-style: dashed;
+}
+
+.bdstyle3 {
+  border-style: dotted;
+}
+
+.bdstyle4 {
+  border-style: inset;
+}
+
+.bdstyle5 {
+  border-style: outset;
+}
+
+.bdstyle6 {
+  border-style: double;
+}
