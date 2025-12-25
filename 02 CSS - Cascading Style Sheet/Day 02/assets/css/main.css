@@ -28,3 +28,7 @@
 .bdstyle6 {
   border-style: double;
 }
+
+.list-group {
+  list-style-type: upper-alpha;
+}
