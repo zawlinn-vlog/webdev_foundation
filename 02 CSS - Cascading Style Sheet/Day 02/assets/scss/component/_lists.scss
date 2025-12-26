@@ -3,9 +3,10 @@
 .list-group {
   // list-style: none;
   // list-style: armenian;
-  // list-style: decimal-leading-zero;
+  list-style: decimal-leading-zero;
   // list-style-type: georgian;
   // list-style-type: upper-roman;
   // list-style-type: lower-greek;
-  list-style-type: upper-alpha;
+  // list-style-type: upper-alpha;
+  // list-style-image: url(../img/logo.png);
 }

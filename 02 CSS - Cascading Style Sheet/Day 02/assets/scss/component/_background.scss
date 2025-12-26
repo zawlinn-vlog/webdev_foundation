@@ -1,0 +1,7 @@
+body {
+  height: 150vh;
+  background-image: url("../img/logo.png");
+  background-repeat: no-repeat; // repeat-x, repeat-y
+  background-position: center; // left, right, top, bottom, left/right top, left/right bottom
+  background-attachment: fixed; // scroll default
+}
