@@ -248,6 +248,45 @@ One font should be the boss. This establishes a hierarchy for the fonts on your 
 font: size variant weight stretch size/line-height family;
 ```
 
+## Install Font on Website &mdash;
+
+```scss
+@font-face {
+  font-family: "name"; // you can type any name
+  src: url("path of font");
+}
+```
+
+## Install font by CDN (Content Delivery Network)
+
+1. Go to `Google`
+2. Search `google fonts`
+3. Search font what you want
+4. Press `Get Font`
+5. Press `Get embed code`
+6. Select `@import` - for css file
+
+   Select `<link>` - for HTML file
+
+7. Press `Copy code`
+
+```scss
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+</style>
+```
+
+or
+
+```html
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+  rel="stylesheet"
+/>
+```
+
 <br/>
 
 [![Webdev Foundation](https://img.shields.io/badge/webdev_foundation-000?style=for-the-badge&logo=ko-fi&logoColor=white)](#)
