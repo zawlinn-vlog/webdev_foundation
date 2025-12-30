@@ -14,7 +14,69 @@ What I use packages are &mdash;
 
 <br>
 
-## CSS &mdash;
+## CSS &mdash Combinators;
+
+There are four different combinators in CSS:
+
+1. Descendant Combinator (space)
+
+```scss
+div p {
+  background-color: crimson;
+}
+```
+
+2. Child Combinator (>)
+
+```scss
+div > p {
+  background-color: crimson;
+}
+```
+
+3. Next Sibling Combinator (+)
+
+```scss
+div + p {
+  background-color: crimson;
+}
+```
+
+4. Subsequent-sibling Combinator (~)
+
+```scss
+div ~ p {
+  background-color: crimson;
+}
+```
+
+## Pseudo-classes Used on Links
+
+- :link - Style unvisited links
+- :visited - Style visited links
+- :hover - Style an link on mouse over
+- :active - Style an activated link
+
+| Pseudo-class        | Examples              | Example Description                                                                            |
+| ------------------- | --------------------- | ---------------------------------------------------------------------------------------------- |
+| :checked            | input:checked         | Matches any `<input>`element that is checked                                                   |
+| :disabled           | :input:disabled       | select any element that is disabled                                                            |
+| :frist-child        | p:first-child         | select the element that is first-child of its parents (among a group of sibling elements)      |
+| :first-of-type      | :first-of-type        | select the first element of its type among of sibling elements                                 |
+| :nth-child()        | p:nth-child(2)        | select any `<p>` element that is the second child of its parent                                |
+| :nth-of-type()      | p:nth-of-type(2)      | select any `<p>` element that is the `<p>` element of its parent                               |
+| :nth-last-child     | p:nth-last-child(2)   | select any `<p>` element that is the second child of its parent, counting from the end         |
+| :nth-last-of-type() | p:nth-last-of-type(2) | select any `<p>` element that is the second `<p>` element of its parent, counting from the end |
+
+## Pseudo-elements &mdash;
+
+| Pseudo-element | Example            | Example Description                                           |
+| -------------- | ------------------ | ------------------------------------------------------------- |
+| ::after        | p::after           | Inserts something after the content of the specified element  |
+| ::before       | p::before          | Inserts something before the content of the specified element |
+| ::placeholder  | input::placeholder | Style the placeholder text of `<input>` elements              |
+| ::first-letter | p:first-letter     | select the first letter of every `<p>` element                |
+| ::selection    | p::selection       | style the user-selected text                                  |
 
 <br/>
 
