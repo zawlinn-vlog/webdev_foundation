@@ -1,0 +1,17 @@
+.selection-01 .para {
+  color: crimson;
+}
+
+.selection-02 + article {
+  background-color: brown;
+  color: white;
+  padding: 5rem 0;
+}
+
+.selection-01 ~ article {
+  background-color: tomato;
+}
+
+article:nth-child(1) {
+  background-color: black;
+}
