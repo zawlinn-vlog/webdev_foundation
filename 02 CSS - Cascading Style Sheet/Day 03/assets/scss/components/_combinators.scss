@@ -1,6 +1,6 @@
-.selection-01 .para {
-  color: crimson;
-}
+// .selection-01 .para{
+//   color: crimson;
+// }
 
 .selection-02 + article {
   background-color: brown;
@@ -12,7 +12,6 @@
   background-color: tomato;
 }
 
-article:nth-child(1) {
-  background-color: black;
-  //   color: white;
+ul li {
+  list-style: decimal-leading-zero;
 }

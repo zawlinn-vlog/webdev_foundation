@@ -1,0 +1,29 @@
+p::selection {
+  color: white;
+  background-color: black;
+}
+
+// p::first-letter {
+//   font-size: 2rem;
+// }
+
+p::before {
+  content: "ABC";
+  font-size: 3rem;
+  color: blue;
+}
+
+p::after {
+  content: "EFG";
+  font-size: 3rem;
+  color: gold;
+}
+
+li::marker {
+  color: crimson;
+  font-size: 2rem;
+}
+
+input::placeholder {
+  color: crimson;
+}

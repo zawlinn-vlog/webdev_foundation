@@ -1,0 +1,13 @@
+.fullname:focus {
+  outline: none;
+  border: 0.2rem solid crimson;
+}
+
+.form-check input[type="checkbox"]:checked {
+  accent-color: gold;
+}
+
+.submit:disabled {
+  background-color: goldenrod;
+  cursor: not-allowed;
+}

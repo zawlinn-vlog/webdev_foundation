@@ -1,0 +1,14 @@
+// article:first-child h1:first-child {
+//   color: crimson;
+//   text-transform: capitalize;
+// }
+
+article:first-child h1:nth-child(1) {
+  color: crimson;
+  text-transform: capitalize;
+}
+
+article:first-child p:first-of-type {
+  background-color: crimson;
+  color: white;
+}

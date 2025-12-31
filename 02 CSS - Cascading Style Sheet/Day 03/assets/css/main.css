@@ -1,7 +1,3 @@
-.selection-01 .para {
-  color: crimson;
-}
-
 .selection-02 + article {
   background-color: brown;
   color: white;
@@ -12,6 +8,56 @@
   background-color: tomato;
 }
 
-article:nth-child(1) {
+ul li {
+  list-style: decimal-leading-zero;
+}
+
+.fullname:focus {
+  outline: none;
+  border: 0.2rem solid crimson;
+}
+
+.form-check input[type=checkbox]:checked {
+  accent-color: gold;
+}
+
+.submit:disabled {
+  background-color: goldenrod;
+  cursor: not-allowed;
+}
+
+article:first-child h1:nth-child(1) {
+  color: crimson;
+  text-transform: capitalize;
+}
+
+article:first-child p:first-of-type {
+  background-color: crimson;
+  color: white;
+}
+
+p::selection {
+  color: white;
   background-color: black;
+}
+
+p::before {
+  content: "ABC";
+  font-size: 3rem;
+  color: blue;
+}
+
+p::after {
+  content: "EFG";
+  font-size: 3rem;
+  color: gold;
+}
+
+li::marker {
+  color: crimson;
+  font-size: 2rem;
+}
+
+input::placeholder {
+  color: crimson;
 }
