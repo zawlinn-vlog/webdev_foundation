@@ -4,6 +4,14 @@ $colors: (orangered, gold, crimson, tomato, skyblue);
   @return 100 * $i + px;
 }
 
+.section {
+  // display: table;
+}
+
+.clear {
+  clear: both;
+}
+
 @for $i from 1 through 5 {
   .box#{$i} {
     width: calarea($i);
@@ -11,5 +19,18 @@ $colors: (orangered, gold, crimson, tomato, skyblue);
     background-color: nth($colors, $i);
     color: white;
     margin-bottom: 0.5rem;
+    float: left;
   }
 }
+
+// .box1 {
+//   float: left;
+// }
+
+// .box2 {
+//   float: left;
+// }
+
+// .box4 {
+//   float: left;
+// }

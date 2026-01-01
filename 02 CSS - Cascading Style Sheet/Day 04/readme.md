@@ -16,6 +16,39 @@ What I use packages are &mdash;
 
 ## CSS &mdash Layout &mdash;
 
+1. Float
+2. Flex - 1D
+3. Grid - 2D
+
+CSS layout system ကို သိမို့အတွက်ဆို box model ကို နားလည်မို့ လိုအပ်ပါတယ်။
+
+the total width of an element should be calculated like this:
+
+```txt
+Total element width = content width + left padding + right padding + left border + right border
+```
+
+The total height of an element should be calculated like this:
+
+```txt
+Total element height = content height + top padding + bottom padding + top border + bottom border
+```
+
+1. Float
+
+element ကို float ဖိအောင် လုပ်ပေးပီး clear property နဲ့ တွဲသုံးပေးရတယ်
+
+```scss
+div {
+  float: left; // right
+
+  &::after {
+    content: "";
+    clear: both;
+  }
+}
+```
+
 <br/>
 
 [![Webdev Foundation](https://img.shields.io/badge/webdev_foundation-000?style=for-the-badge&logo=ko-fi&logoColor=white)](#)
