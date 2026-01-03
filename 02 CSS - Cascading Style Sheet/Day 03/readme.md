@@ -14,7 +14,7 @@ What I use packages are &mdash;
 
 <br>
 
-## CSS &mdash Combinators;
+## CSS &mdash; Combinators;
 
 There are four different combinators in CSS:
 

@@ -83,7 +83,7 @@ list-style-image: url();
 ## CSS - Background &mdash;
 
 1. background-color - name, Hex, rgb/rgba, hsl/hsla
-2. background-image - images
+2. background-image - images, gradient-color (linear, radial and conic)
 3. background-repeat - no-repeat, repeat-x, repeat-y
 4. background-size - cover,contain, percentage, px
 5. background-attachment - scroll, fix

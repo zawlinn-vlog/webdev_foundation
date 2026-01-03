@@ -1,0 +1,55 @@
+//
+
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 1.6rem;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #777;
+
+  transition: color 0.3s;
+}
+
+a:active {
+  color: crimson;
+}
+
+.navbar {
+  background-color: #efefef;
+  padding: 0 3rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &-logo {
+    font-size: 2.8rem;
+  }
+
+  &-container {
+    list-style: none;
+
+    display: flex;
+  }
+
+  &-items {
+    padding: 2rem;
+
+    &:hover .navbar-link {
+      color: #222;
+    }
+  }
+}

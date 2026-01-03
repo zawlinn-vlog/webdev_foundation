@@ -36,6 +36,7 @@
 body {
   height: 150vh;
   background-image: url("../img/logo.png");
+  background-image: conic-gradient(from 90deg, red, yellow, green);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;

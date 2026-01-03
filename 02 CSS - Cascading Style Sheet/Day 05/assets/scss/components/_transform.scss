@@ -1,0 +1,65 @@
+//
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.row {
+  background-color: #efefef;
+  width: 100%;
+  overflow: hidden;
+
+  &:hover .translate_box {
+    // transform: translate(100%, 5rem); // x axis
+    transform: translate(100%);
+  }
+
+  &:hover .rotate_box {
+    // transform: rotate(360deg);
+    transform: rotate(2turn);
+  }
+
+  &:hover .scale_box {
+    transform: scale(1.5, 2.5);
+    // transform: scaleX(2.5);
+    // transform: scaleY(3.5);
+  }
+
+  &:hover .skew_box {
+    // transform: skew(20deg); // x axis
+    transform: skew(50deg, 20deg);
+  }
+
+  display: grid;
+}
+
+.box {
+  width: 15rem;
+  height: 15rem;
+  background-color: crimson;
+  color: wheat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  transition-property: transform;
+  transition-duration: 0.3s;
+
+  //   transition: transform 0.3s;
+}
+
+.translate_box {
+  //   transform: translate(5rem, 5rem);
+}
+
+.scale_box,
+.skew_box {
+  justify-self: center;
+}

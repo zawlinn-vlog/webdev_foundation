@@ -1,0 +1,21 @@
+{
+  "name": "day-05",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:css": "sass ./assets/scss/main.scss ./assets/css/main.css -w --no-source-map",
+    "server": "live-server",
+    "start": "npm-run-all --parallel server compile:css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "live-server": "^1.2.2",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.97.1"
+  }
+}

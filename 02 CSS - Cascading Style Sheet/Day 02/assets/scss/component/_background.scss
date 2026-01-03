@@ -1,6 +1,15 @@
 body {
   height: 150vh;
   background-image: url("../img/logo.png");
+  // background-image: linear-gradient(red 10%, green 0 60%, yellow 0 80%);
+  // background-image: linear-gradient(position, color1, color2); // to left/right/bottom/top, to left/right top, to left/right bottom, 0-360deg
+  // background-image: radial-gradient(circle at 60% 70%, red, yellow, brown);
+  // background-image: radial-gradient(closest-side at 60% 70%, red, yellow, brown);
+  // background-image: radial-gradient(shape size at position, red, yellow, brown); // circle, ellipse (Default), closest-side/corner, farthest-side/corner
+
+  // background-image: conic-gradient([from angle] [at position,] color [degree], color [degree], ...);
+  // background-image: conic-gradient(at 60% 45%, red, yellow, green);
+  background-image: conic-gradient(from 90deg, red, yellow, green);
   background-repeat: no-repeat; // repeat-x, repeat-y
   background-position: center; // left, right, top, bottom, left/right top, left/right bottom
   background-attachment: fixed; // scroll default
