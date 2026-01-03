@@ -49,6 +49,73 @@ div {
 }
 ```
 
+2. Flex
+
+Row OR Column တစ်ခုတည်း ကို စီမံချင်ရင် အသုံးများဆုံး
+
+အသုံးများတဲ့နေရာ
+
+1. Navbar
+
+2. Card row
+
+3. Center alignment
+
+> 📌 Main axis / Cross axis concept အရေးကြီး
+
+```scss
+.main {
+  display: flex;
+  flex-direction: row; // row is default, column, row-reverse, column-reverse
+  justify-content: flex-start; // flex-start is default, center, flex-end, space-between, space-around, space-evenly
+  align-items: flex-start; // stretch is default, flex-start, center, flex-end, baseline
+  align-content: stretch; // flex-start, flex-end, center, space-between, space-around,
+  flex-wrap: nowrap; // nowrap is default, wrap
+
+  flex-grow: 0; // 1, number;
+  flex-basis: 10rem; // rem, em, px, %
+  flex-shrink: 1; // 1 is default, 0
+
+  flex-flow: row reverse; // row wrap, column wrap-reverse, column reverse;
+}
+```
+
+## Shorthand
+
+```scss
+.main {
+  flex: flex-grow flex-shrink flex-basis;
+  flex-flow: flex-direction flex-wrap;
+}
+```
+
+## CSS &mdash; GRID
+
+Row + Column နှစ်ဖက်လုံး ကို တပြိုင်နက် ထိန်းချုပ်နိုင်
+
+## 📌 အသုံးများတဲ့နေရာ
+
+1. Website main layout
+2. Dashboard
+3. Complex UI
+
+### 🔥 ဘယ် Layout ကို ဘယ်အချိန် သုံးမလဲ?
+
+| အလုပ်                      | သင့်တော်    |
+| -------------------------- | ----------- |
+| Navbar / Button alignment  | Flexbox     |
+| Page structure / Dashboard | Grid        |
+| Floating text + image      | Float       |
+| Fixed header / popup       | Position    |
+| Responsive design          | Flex + Grid |
+
+## 💡 အကျဉ်းချုပ်
+
+- Flexbox → 1D layout
+- Grid → 2D layout
+- Position → Exact placement
+- Responsive → Media Query မဖြစ်မနေ
+
 <br/>
 
 [![Webdev Foundation](https://img.shields.io/badge/webdev_foundation-000?style=for-the-badge&logo=ko-fi&logoColor=white)](#)

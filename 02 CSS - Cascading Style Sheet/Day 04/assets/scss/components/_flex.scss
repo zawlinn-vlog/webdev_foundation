@@ -1,10 +1,27 @@
+@use "sass:list";
+
 .main {
+  // width: 20rem;
+  // width: 70rem;
   height: 30rem;
   background-color: #bcbcbc;
 
   display: flex;
-  justify-content: center; // flex-start, center, flex-end, space-between, space-around
-  align-items: center; // stretch is default, flex-start, center, flex-end
+  // flex-direction: column;
+  // flex-direction: column-reverse;
+  // flex-direction: row; // default
+  // flex-direction: row-reverse;
+  // flex-wrap: wrap;
+  // flex-wrap: nowrap;
+  // flex-flow: row-reverse wrap; // flex-direction flex-wrap
+
+  // justify-content: flex-end;
+  // flex-wrap: wrap;
+  // justify-content: center; // flex-start, center, flex-end, space-between, space-around
+  // align-items: center; // stretch is default, flex-start, center, flex-end
+  // align-content: flex-start;
+  // align-content: flex-end;
+  // align-content: space-evenly;
 }
 
 $colors_flex: (
@@ -25,11 +42,13 @@ $colors_flex: (
 }
 @for $i from 1 through 10 {
   .flex-items__#{$i} {
-    background-color: nth($colors_flex, $i);
+    background-color: list.nth($colors_flex, $i);
     font-size: 1.6rem;
 
+    // flex-grow: $i;
+
     // flex-grow: 1; // 0 is default
-    flex-basis: 10rem;
-    flex-shrink: 0; // 1 is default
+    // flex-basis: 10rem;
+    // flex-shrink: 0; // 1 is default
   }
 }

@@ -1,3 +1,5 @@
+@use "sass:list";
+
 $colors: (orangered, gold, crimson, tomato, skyblue);
 
 @function calarea($i) {
@@ -16,7 +18,7 @@ $colors: (orangered, gold, crimson, tomato, skyblue);
   .box#{$i} {
     width: calarea($i);
     height: calarea($i);
-    background-color: nth($colors, $i);
+    background-color: list.nth($colors, $i);
     color: white;
     margin-bottom: 0.5rem;
     float: left;
