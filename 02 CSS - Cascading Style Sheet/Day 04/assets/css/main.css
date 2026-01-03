@@ -46,3 +46,85 @@
   margin-bottom: 0.5rem;
   float: left;
 }
+
+.main {
+  height: 30rem;
+  background-color: #bcbcbc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+.flex-items__1 {
+  background-color: yellow;
+  font-size: 1.6rem;
+  flex-basis: 10rem;
+  flex-shrink: 0;
+}
+
+.flex-items__2 {
+  background-color: red;
+  font-size: 1.6rem;
+  flex-basis: 10rem;
+  flex-shrink: 0;
+}
+
+.flex-items__3 {
+  background-color: green;
+  font-size: 1.6rem;
+  flex-basis: 10rem;
+  flex-shrink: 0;
+}
+
+.flex-items__4 {
+  background-color: orange;
+  font-size: 1.6rem;
+  flex-basis: 10rem;
+  flex-shrink: 0;
+}
+
+.flex-items__5 {
+  background-color: brown;
+  font-size: 1.6rem;
+  flex-basis: 10rem;
+  flex-shrink: 0;
+}
+
+.flex-items__6 {
+  background-color: gold;
+  font-size: 1.6rem;
+  flex-basis: 10rem;
+  flex-shrink: 0;
+}
+
+.flex-items__7 {
+  background-color: blue;
+  font-size: 1.6rem;
+  flex-basis: 10rem;
+  flex-shrink: 0;
+}
+
+.flex-items__8 {
+  background-color: tomato;
+  font-size: 1.6rem;
+  flex-basis: 10rem;
+  flex-shrink: 0;
+}
+
+.flex-items__9 {
+  background-color: crimson;
+  font-size: 1.6rem;
+  flex-basis: 10rem;
+  flex-shrink: 0;
+}
+
+.flex-items__10 {
+  background-color: orchid;
+  font-size: 1.6rem;
+  flex-basis: 10rem;
+  flex-shrink: 0;
+}

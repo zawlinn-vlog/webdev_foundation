@@ -1,0 +1,35 @@
+.main {
+  height: 30rem;
+  background-color: #bcbcbc;
+
+  display: flex;
+  justify-content: center; // flex-start, center, flex-end, space-between, space-around
+  align-items: center; // stretch is default, flex-start, center, flex-end
+}
+
+$colors_flex: (
+  yellow,
+  red,
+  green,
+  orange,
+  brown,
+  gold,
+  blue,
+  tomato,
+  crimson,
+  orchid
+);
+
+:root {
+  font-size: 62.5%;
+}
+@for $i from 1 through 10 {
+  .flex-items__#{$i} {
+    background-color: nth($colors_flex, $i);
+    font-size: 1.6rem;
+
+    // flex-grow: 1; // 0 is default
+    flex-basis: 10rem;
+    flex-shrink: 0; // 1 is default
+  }
+}
