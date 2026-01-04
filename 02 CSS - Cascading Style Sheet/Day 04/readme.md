@@ -116,6 +116,35 @@ Row + Column နှစ်ဖက်လုံး ကို တပြိုင်�
 - Position → Exact placement
 - Responsive → Media Query မဖြစ်မနေ
 
+## Position &mdash;
+
+- Static - Default
+- Relative
+- Absolute
+- fixed
+- sticky - use `top: 0`;
+
+```scss
+.navbar {
+  position: relative; // absolute, fixed, sticky (top: 0)
+}
+```
+
+## Animation &mdash;
+
+```scss
+.rotate {
+  animation-name: rotate;
+  animation-duration: 5s;
+  animation-timing-function: linear; // ease, ease-in, ease-out, ease-in-out
+  animation-delay: 0.3s;
+  animation-iteration-count: 5; // infinite
+  animation-direction: normal; // reverse, alternate, alternate-reverse
+  animation-fill-mode: forwards; // backwards;
+  animation-play-state: paused; // running
+}
+```
+
 <br/>
 
 [![Webdev Foundation](https://img.shields.io/badge/webdev_foundation-000?style=for-the-badge&logo=ko-fi&logoColor=white)](#)

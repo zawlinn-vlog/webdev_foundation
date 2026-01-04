@@ -1,0 +1,70 @@
+//
+
+.main-container {
+  width: 700px;
+  height: 700px;
+  background-color: beige;
+  margin-inline: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+.circle {
+  border-radius: 50%;
+  border: 1px solid;
+
+  position: absolute;
+
+  &-1 {
+    width: 170px;
+    height: 170px;
+    background-image: conic-gradient(
+      red 0%,
+      blue 33%,
+      red 0%,
+      green 66%,
+      red 0%,
+      yellow 100%
+    );
+  }
+
+  &-2 {
+    width: 150px;
+    height: 150px;
+    background-color: black;
+  }
+}
+
+.pointer {
+  width: 10px;
+  height: 100px;
+  //   background-color: azure;
+
+  position: relative;
+  top: -50px;
+  z-index: 3;
+
+  animation: rotation 5s linear infinite;
+  transform-origin: bottom;
+}
+
+.point {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: brown;
+  border-radius: 50%;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
