@@ -1,0 +1,47 @@
+//
+
+@use "../abstract/functions" as fun;
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &-nav {
+    display: flex;
+  }
+
+  &-link {
+    display: inline-block;
+    position: relative;
+    padding: 0.5rem 0;
+
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 0;
+      border-bottom: 0.1rem solid #fff;
+
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      transition: all 0.5s;
+    }
+
+    &:hover::after,
+    .active {
+      width: 100%;
+    }
+  }
+
+  &-items {
+    padding: 1.5rem 3rem;
+    text-transform: uppercase;
+    transition: all 0.3s;
+  }
+}
+
+.active .navbar-link::after {
+  width: 100%;
+}
