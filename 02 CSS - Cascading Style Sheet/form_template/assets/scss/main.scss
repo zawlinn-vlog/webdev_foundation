@@ -3,7 +3,9 @@
 @forward "./abstract/fonts";
 
 @forward "./base/base";
+@forward "./base/utilities";
 
 @forward "./component/navbar";
+@forward "./component/modal";
 
 @forward "./pages/home";

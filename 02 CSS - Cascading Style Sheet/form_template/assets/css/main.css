@@ -58,6 +58,10 @@ li {
   list-style: none;
 }
 
+.d-none {
+  display: none;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -93,6 +97,69 @@ li {
 
 .active .navbar-link::after {
   width: 100%;
+}
+
+.modal {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-shadow {
+  width: inherit;
+  height: inherit;
+  background-color: rgba(34, 34, 34, 0.6666666667);
+  backdrop-filter: blur(0.2rem);
+  -webkit-backdrop-filter: blur(0.2rem);
+}
+.modal-container {
+  background-color: var(--primary-color);
+  border-radius: 0.5rem;
+  width: 100rem;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1000;
+  display: flex;
+  gap: 3rem;
+}
+.modal-logo, .modal-box {
+  flex: 1;
+  padding: 7rem;
+}
+.modal-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.modal-logo__img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 0.3rem solid var(--secondary-color);
+  padding: 0.3rem;
+}
+.modal-logo__img:hover .modal-logo__pic {
+  scale: 1.2;
+}
+.modal-logo__pic {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.modal-box {
+  display: grid;
+  grid-template-columns: repeat(2, 100%);
+  gap: 8rem;
+  place-items: center;
 }
 
 main {
