@@ -129,9 +129,9 @@ li {
 }
 .modal-logo, .modal-box {
   flex: 1;
-  padding: 7rem;
 }
 .modal-logo {
+  padding: 7rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -160,6 +160,12 @@ li {
   grid-template-columns: repeat(2, 100%);
   gap: 8rem;
   place-items: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
 }
 
 main {
