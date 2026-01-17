@@ -40,91 +40,169 @@
     </main>
     <!-- MODAL BOX SECTION START -->
     <div class="modal">
+      <!-- SHADOW START -->
       <div class="modal-shadow"></div>
+      <!-- SHADOW END -->
       <div class="modal-container">
+        <!-- LOGO START -->
         <div class="modal-logo">
-          <div class="modal-logo__img">
-            <img src="./assets/img/logo.png" alt="" class="modal-logo__pic" />
+          <!-- WRAPPER START -->
+          <div class="modal-logo__wrapper">
+            <div class="modal-logo__img">
+              <img src="./assets/img/logo.png" alt="" class="modal-logo__pic" />
+            </div>
+            <h2 class="modal-logo__title">Ngwe Won</h2>
+            <p class="modal-logo__txt">
+              <q
+                >&mdash; Lorem, ipsum dolor sit amet consectetur adipisicing
+                elit. Id quia omnis corrupti. Hic, culpa natus. &mdash;</q
+              >
+            </p>
+            <p class="modal-logo__author">&mdash; Zaw Linn</p>
           </div>
-          <h2 class="modal-logo__title">Ngwe Won</h2>
-          <p class="modal-logo__txt">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id quia
-            omnis corrupti. Hic, culpa natus.
-          </p>
+          <!-- WRAPPER END -->
         </div>
+        <!-- LOGO END -->
+        <!-- MODAL BOX START -->
         <div class="modal-box">
+          <!-- LOG IN START -->
           <div class="form-login">
-            <form action="" method="post" enctype="multipart/form-data">
+            <a href="" class="form-links form-title"
+              >Create an Account &mdash;</a
+            >
+            <form
+              action=""
+              method="post"
+              enctype="multipart/form-data"
+              class="form-wrapper"
+            >
+              <!-- Email START -->
               <div class="form-group">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" name="email" id="email" />
+                <input
+                  type="email"
+                  name="email"
+                  id="lemail"
+                  class="form-input"
+                  placeholder="Enter"
+                />
+
+                <label for="lemail" class="form-label">Email Address</label>
               </div>
+              <!-- Email END -->
+              <!-- Password START -->
               <div class="form-group">
-                <label for="pass" class="form-label">Password</label>
-                <input type="password" name="pass" id="pass" />
+                <input
+                  type="password"
+                  name="pass"
+                  id="pass"
+                  class="form-input"
+                  placeholder="Enter your password"
+                />
+                <label for="pass" class="form-label"> Password</label>
+                <div class="form-show__container">
+                  <div class="form-show__group">
+                    <input type="checkbox" name="" id="form-show__pass" />
+                    <label
+                      for="form-show__pass"
+                      class="form-links form-show__pass"
+                      >Show Password</label
+                    >
+                  </div>
+                  <a href="#" class="form-links form-forget__pass"
+                    >Forget Password?</a
+                  >
+                </div>
               </div>
-              <button type="submit" class="btn form-btn">Log in</button>
+              <!-- Password END -->
+              <button type="submit" class="btn btn-submit">Sign In</button>
             </form>
+            <div class="social">
+              <p class="form-txt">Sign in with Social</p>
+              <div class="social-container">
+                <a href="" class="form-link">
+                  <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="form-link">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="form-link">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
           </div>
+          <!-- LOG IN END -->
+          <!-- REGISTER START -->
           <div class="form-register">
-            <h3 class="form-title">Create an account</h3>
-            <p class="form-subtitle">it's quick and easy</p>
-            <form action="">
+            <form action="" class="form-wrapper">
+              <h3 class="form-links form-title">Create an Account &mdash;</h3>
               <div class="form-group">
-                <div class="first">
-                  <label for="fname" class="form-label">First Name</label>
-                  <input type="text" name="fname" id="fname" />
-                </div>
-                <div class="last">
-                  <label for="surname" class="form-label">Surname</label>
-                  <input type="text" name="lname" id="surname" />
-                </div>
+                <input
+                  type="text"
+                  name="fname"
+                  id=""
+                  class="form-input"
+                  placeholder="Full Name"
+                />
+                <label for="fname" class="form-label">Full Name</label>
               </div>
-              <div class="form-group">
-                <label for="pass" class="form-label">Password</label>
-                <input type="password" name="pass" id="pass" />
-              </div>
-              <div class="form-group">
-                <label for="cpass" class="form-label">Confirmed Password</label>
-                <input type="password" name="cpass" id="cpass" />
-              </div>
-              <div class="form-group">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" name="email" id="email" />
-              </div>
-              <div class="form-group">
-                <label for="" class="form-label">Gender</label>
-                <div class="form-radio">
-                  <label for="male" class="">Male</label>
-                  <input type="radio" name="gender" id="male" />
-                </div>
-                <div class="form-radio">
-                  <label for="female" class="">Female</label>
-                  <input type="radio" name="gender" id="female" />
-                </div>
-                <div class="form-radio">
-                  <label for="other" class="">Other</label>
-                  <input type="radio" name="gender" id="other" />
-                </div>
-              </div>
-              <p class="ads">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Provident vel delectus dicta ipsum! <a href="#">learn more.</a>
-              </p>
-              <p class="ads">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                <a href="#">Facere dolore</a> voluptates,
-                <a href="#">voluptatem</a> molestias, tempora eaque omnis
-                mollitia accusantium dolores ullam, quidem iste. Fugiat quidem
-                obcaecati nostrum eaque eligendi.
-              </p>
 
-              <button type="submit" class="btn form-btn">Sign Up</button>
+              <div class="form-group">
+                <input
+                  type="email"
+                  name="email"
+                  id=""
+                  class="form-input"
+                  placeholder="email address"
+                />
+                <label for="email" class="form-label">Email Address</label>
+              </div>
 
-              <a href="#" class="btn btn-txt">Already have an account?</a>
+              <div class="form-group">
+                <input
+                  type="password"
+                  name="rpass"
+                  id="rpass"
+                  class="form-input"
+                  placeholder="password"
+                />
+                <label for="rpass" class="form-label">Password</label>
+              </div>
+
+              <div class="form-group">
+                <input
+                  type="password"
+                  name="rcpass"
+                  id="rcpass"
+                  class="form-input"
+                  placeholder="confirm password"
+                />
+                <label for="rcpass" class="form-label">Confirm Password</label>
+                <div class="form-show__container">
+                  <div class="form-show__group">
+                    <input type="checkbox" name="" id="form-show__apass" />
+                    <label
+                      for="form-show__apass"
+                      class="form-links form-show__pass"
+                      >Show Password</label
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-show__group form-agree">
+                <input type="checkbox" name="agree" id="agreement" />
+                <label for="agreement" class="form-check__label"
+                  >I accept all agreement of Terms and Conditions</label
+                >
+              </div>
+
+              <button type="submit" class="btn btn-submit">Register</button>
             </form>
           </div>
+          <!-- REGISTER END -->
         </div>
+        <!-- MODAL BOX END -->
       </div>
     </div>
     <!-- MODAL BOX SECTION END -->

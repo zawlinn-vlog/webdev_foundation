@@ -10,6 +10,7 @@
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 10;
 
   display: flex;
   justify-content: center;
@@ -27,35 +28,67 @@
     background-color: fun.getColor(primary);
     border-radius: 0.5rem;
     width: 100rem;
+    min-height: 56rem;
     overflow: hidden;
 
     position: absolute;
     z-index: 1000;
 
-    display: flex;
-    gap: 3rem;
-  }
-
-  &-logo,
-  &-box {
-    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    // gap: 3rem;
   }
 
   &-logo {
-    padding: 7rem;
-    // position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    color: fun.getColor(primary);
+    padding: 9rem 7rem 0;
+    overflow: hidden;
+
+    position: relative;
+    left: 0;
+    top: 0;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(
+        45deg,
+        fun.getColor(primary) 10%,
+        fun.getColor(secondary) 0 90%,
+        fun.getColor(primary) 0 10%
+      );
+      transition: all 0.3s;
+      backface-visibility: hidden;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 100;
+    }
+
+    &:hover::before {
+      transform: scale(1.2) rotate(270deg);
+    }
+
+    &__wrapper {
+      position: relative;
+      z-index: 101;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
     &__img {
       width: 15rem;
       height: 15rem;
       border-radius: 50%;
       overflow: hidden;
-      border: 0.3rem solid fun.getColor(secondary);
+      border: 0.3rem solid fun.getColor(primary);
       padding: 0.3rem;
+      margin-bottom: 2.5rem;
 
       &:hover .modal-logo__pic {
         scale: 1.2;
@@ -70,24 +103,242 @@
 
       transition: all 0.3s;
     }
+
+    &__title {
+      margin-bottom: 1.3rem;
+      font-size: 2.8rem;
+      letter-spacing: 0.1rem;
+      text-transform: uppercase;
+      display: inline-block;
+      padding: 0.5rem 0;
+
+      position: relative;
+
+      &::before,
+      &::after {
+        content: "";
+        display: block;
+        width: 5rem;
+        height: 0.2rem;
+        background: fun.getColor(primary);
+
+        position: absolute;
+        transition: all 0.3s;
+      }
+
+      &:hover::before {
+        width: 100%;
+      }
+      &:hover::after {
+        width: 100%;
+      }
+
+      &::before {
+        top: 0;
+        left: 0;
+      }
+
+      &::after {
+        bottom: 0;
+        right: 0;
+      }
+    }
+
+    &__txt {
+      line-height: 1.6;
+      font-size: 1.6rem;
+      text-align: center;
+      padding: 0 3rem;
+      color: #fff9;
+      text-transform: capitalize;
+      word-spacing: 0.15rem;
+
+      &::selection {
+        color: fun.getColor(primary);
+      }
+    }
+
+    &__author {
+      margin-top: 2rem;
+      margin-left: auto;
+      color: #fff9;
+      cursor: pointer;
+    }
   }
 
   &-box {
     display: grid;
     grid-template-columns: repeat(2, 100%);
-    gap: 8rem;
-    place-items: center;
+
+    transition: all 0.3s;
+
+    position: relative;
+    left: -100%;
   }
 }
 
 .form {
   &-login,
   &-register {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-wrapper {
+    // padding: 3rem 0 0;
+    margin-top: 8rem;
+  }
+
+  &-links {
+    color: fun.getColor(secondary);
+    font-size: 1.2rem;
+  }
+
+  &-title {
+    font-size: 1.7rem;
+
+    position: absolute;
+    top: 5rem;
+    left: 5rem;
   }
 
   &-group {
-    display: flex;
-    flex-direction: column;
     width: 30rem;
+    height: 4rem;
+
+    position: relative;
+
+    &:not(:last-of-type) {
+      margin-bottom: 3.5rem;
+    }
+
+    // &:nth-child(4) {
+    //   margin-bottom: 1.5rem;
+    // }
+
+    &:last-of-type {
+      margin-bottom: 5rem;
+    }
   }
+
+  &-label {
+    color: #555;
+    transition: all 0.3s;
+
+    position: absolute;
+    left: 0.3rem;
+    top: -2.3rem;
+  }
+
+  &-input {
+    width: 100%;
+    height: inherit;
+    border: none;
+    outline: none;
+    font-size: 1.6rem;
+    padding-left: 0.5rem;
+    border-left: 1rem solid fun.getColor(secondary);
+    border-bottom: 0.2rem solid fun.getColor(secondary);
+
+    &::placeholder {
+      opacity: 0;
+    }
+
+    &:placeholder-shown ~ .form-label {
+      top: 1.05rem;
+      left: 1.3rem;
+
+      color: #999;
+    }
+  }
+
+  &-check {
+    &__label {
+      font-size: 1.3rem;
+      color: fun.getColor(secondary);
+    }
+  }
+
+  &-show {
+    &__container {
+      margin-top: 0.5rem;
+
+      justify-content: space-between;
+    }
+
+    &__container,
+    &__group {
+      display: flex;
+      align-items: center;
+    }
+
+    &__group {
+      gap: 0.3rem;
+    }
+  }
+
+  &-agree {
+    margin-bottom: 2rem;
+  }
+}
+
+.social {
+  .form-txt {
+    color: fun.getColor(secondary);
+    text-transform: capitalize;
+
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      width: 3rem;
+      height: 0.2rem;
+      display: block;
+      background-color: fun.getColor(secondary);
+
+      position: absolute;
+      top: 50%;
+    }
+
+    &::before {
+      left: 0;
+      transform: translateX(-120%);
+    }
+
+    &::after {
+      right: 0;
+      transform: translateX(120%);
+    }
+  }
+  &-container {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+
+    margin-top: 2rem;
+
+    & > * {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 10%;
+      background-color: fun.getColor(secondary);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .fab {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+input[name="fname"] {
+  text-transform: capitalize;
 }

@@ -1,0 +1,19 @@
+//
+
+@use "../abstract/functions" as fun;
+
+.btn {
+  border: none;
+  outline: none;
+  display: inline-bl;
+  cursor: pointer;
+
+  &-submit {
+    margin: 0 0 2.8rem;
+    width: 100%;
+    font-size: 1.6rem;
+    background-color: fun.getColor(secondary);
+    color: fun.getColor(primary);
+    padding: 1.2rem 0;
+  }
+}
