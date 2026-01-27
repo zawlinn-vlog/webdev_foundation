@@ -1,0 +1,12 @@
+@use "../abstract/function" as fun;
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  background-color: fun.getColor(bg);
+  color: fun.getColor(text);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

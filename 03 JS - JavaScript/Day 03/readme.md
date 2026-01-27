@@ -8,7 +8,11 @@
 
 <!-- ![Screenshot of Project](./s1.png) -->
 
-## JS - JavaScript Foundation Course
+### JS String Methods &mdash;
+
+#### at() &mdash;
+
+- value ကို integer လက်ခံ၍ string(char) ကို return ပေးသည်။ positive value ဆို left ကနေ စတင်ရေတွက်၍ negative value ဆို right ဘက်မှ ရေတွက်သည်။
 
 What I use packages are &mdash;
 
